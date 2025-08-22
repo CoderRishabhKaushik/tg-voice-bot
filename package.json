@@ -1,15 +1,10 @@
 {
   "name": "tg-voice-bot",
   "version": "1.0.0",
+  "description": "Create Telegram voice chat music bots with Node.js + Python bridge",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
-  "scripts": {
-    "dev": "nodemon dist/index.js",
-    "start": "node dist/index.js",
-    "build": "tsc && copyfiles -u 2 src/python_bridge/* dist/python_bridge",
-    "prepare": "npm run build"
-  },
   "keywords": [
     "telegram",
     "music-bot",
@@ -18,16 +13,26 @@
   ],
   "author": "Rishabh Kaushik",
   "license": "MIT",
-  "description": "Create Telegram voice chat music bots with Node.js + Python bridge",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "dev": "nodemon dist/index.js",
+    "start": "node dist/index.js",
+    "build": "tsc && copyfiles -u 2 src/python_bridge/* dist/python_bridge",
+    "prepublishOnly": "npm run build",
+    "postinstall": "echo '⚠️ Make sure Python 3.11.6 is installed. Then run: pip install -r ./dist/python_bridge/requirements.txt'"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.61.0",
+    "yt-search": "^2.13.1"
+  },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
     "@types/node": "^24.3.0",
     "@types/node-telegram-bot-api": "^0.64.10",
     "@types/yt-search": "^2.10.3",
     "copyfiles": "^2.4.1",
     "typescript": "^5.9.2"
-  },
-  "dependencies": {
-    "node-telegram-bot-api": "^0.61.0",
-    "yt-search": "^2.13.1"
   }
 }
