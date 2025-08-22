@@ -1,4 +1,5 @@
 cat > README.md <<EOL
+
 # tg-voice-bot 🎵
 
 Easily create your own Telegram Music Bot that streams to voice chats, powered by **Node.js + Python (PyTgCalls)**.
@@ -7,10 +8,10 @@ Easily create your own Telegram Music Bot that streams to voice chats, powered b
 
 ## Features
 
-- Stream music directly to Telegram voice chats  
-- Uses PyTgCalls and Telethon under the hood  
-- Easy to integrate and extend  
-- Cross-platform (Node.js + Python bridge)  
+- Stream music directly to Telegram voice chats
+- Uses PyTgCalls and Telethon under the hood
+- Easy to integrate and extend
+- Cross-platform (Node.js + Python bridge)
 
 ---
 
@@ -24,8 +25,8 @@ npm install tg-voice-bot
 
 ## Setup
 
-1. Clone your project or use it in another project.  
-2. Make sure you have **Python 3.11+** installed.  
+1. Clone your project or use it in another project.
+2. Make sure you have **Python 3.11+** installed.
 3. Install Python dependencies:
 
 \`\`\`bash
@@ -46,16 +47,16 @@ npm run build
 import { TgMusicBot } from "tg-voice-bot";
 
 const bot = new TgMusicBot({
-  apiId: 123456,           // Your Telegram API ID
-  apiHash: "your_api_hash", // Your Telegram API Hash
-  phone: "+1234567890",     // Your phone number
-  botToken: "your_bot_token"// Optional: Telegram Bot token
+apiId: 123456, // Your Telegram API ID
+apiHash: "your_api_hash", // Your Telegram API Hash
+phone: "+1234567890", // Your phone number
+botToken: "your_bot_token"// Optional: Telegram Bot token
 });
 
 bot.start(); // Starts the music bot
 \`\`\`
 
-> Make sure to replace \`apiId\`, \`apiHash\`, \`phone\`, and \`botToken\` with your Telegram credentials.  
+> Make sure to replace \`apiId\`, \`apiHash\`, \`phone\`, and \`botToken\` with your Telegram credentials.
 
 The bot will join voice chats and allow music streaming commands.
 
@@ -63,9 +64,9 @@ The bot will join voice chats and allow music streaming commands.
 
 ## Bot Commands
 
-- \`/play <songname>\` – Plays a song in the voice chat  
-- \`/skip\` – Skips the currently playing song  
-- \`/stop\` – Stops playback and clears the queue  
+- \`/play <songname>\` – Plays a song in the voice chat
+- \`/skip\` – Skips the currently playing song
+- \`/stop\` – Stops playback and clears the queue
 
 > Example:
 
@@ -79,21 +80,25 @@ The bot will join voice chats and allow music streaming commands.
 
 ## Python Bridge
 
-- Python scripts used for voice streaming are located in \`dist/python_bridge/\`  
-- Dependencies are listed in \`requirements.txt\`  
+- Python scripts used for voice streaming are located in \`dist/python_bridge/\`
+- Dependencies are listed in \`requirements.txt\`
 
 ---
 
 ## Development
 
 \`\`\`bash
+
 # Install dependencies
+
 npm install
 
 # Build TypeScript + copy Python bridge
+
 npm run build
 
 # Start bot in development mode
+
 npm run dev
 \`\`\`
 
@@ -101,20 +106,20 @@ npm run dev
 
 ## Documentation
 
-- Main classes: \`TgMusicBot\` and \`TgVoiceStream\`  
-- Example usage is included in \`test.js\`  
+- Main classes: \`TgMusicBot\` and \`TgVoiceStream\`
+- Example usage is included in \`test.js\`
 
 ---
 
 ## Contributing
 
-- Open issues or pull requests on [GitHub](https://github.com/yourusername/tg-voice-bot)  
+- Open issues or pull requests on [GitHub](https://github.com/CoderRishabhKaushik/tg-voice-bot)
 
 ---
 
 ## License
 
-MIT © Rishabh Kaushik  
+MIT © Rishabh Kaushik
 
 ---
 
