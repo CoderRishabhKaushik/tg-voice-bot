@@ -17,7 +17,7 @@ npm install tg-voice-bot
 
 ## Setup
 
-1. Clone the project or use it in another project.
+1. Clone the project from GitHub or use it in another project:
 2. Make sure you have **Python 3.11+** installed.
 3. Install Python dependencies:
 
@@ -93,7 +93,6 @@ npm run dev
 ## Documentation
 
 - Main classes: \`TgMusicBot\` and \`TgVoiceStream\`
-- Example usage is included in \`test.js\`
 
 ## Contributing
 
