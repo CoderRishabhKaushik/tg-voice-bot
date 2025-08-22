@@ -1,4 +1,0 @@
-telethon==1.40.0
-py-tgcalls==2.2.6
-ntgcalls==2.0.6
-yt-dlp
