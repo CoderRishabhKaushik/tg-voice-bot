@@ -1,10 +1,6 @@
-cat > README.md <<EOL
+# tg-voice-bot - Telegram Music Bot 🎵
 
-# tg-voice-bot 🎵
-
-Easily create your own Telegram Music Bot that streams to voice chats, powered by **Node.js + Python (PyTgCalls)**.
-
----
+> Easily create your own Telegram Music Bot that streams to voice chats, powered by **Node.js + Python (PyTgCalls)**.
 
 ## Features
 
@@ -13,37 +9,31 @@ Easily create your own Telegram Music Bot that streams to voice chats, powered b
 - Easy to integrate and extend
 - Cross-platform (Node.js + Python bridge)
 
----
-
 ## Installation
 
-\`\`\`bash
+```bash
 npm install tg-voice-bot
-\`\`\`
-
----
+```
 
 ## Setup
 
-1. Clone your project or use it in another project.
+1. Clone the project or use it in another project.
 2. Make sure you have **Python 3.11+** installed.
 3. Install Python dependencies:
 
-\`\`\`bash
+```bash
 pip install -r ./dist/python_bridge/requirements.txt
-\`\`\`
+```
 
 4. Build the project (if using TypeScript source):
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
-
----
+```
 
 ## Usage
 
-\`\`\`ts
+```bash
 import { TgMusicBot } from "tg-voice-bot";
 
 const bot = new TgMusicBot({
@@ -54,7 +44,7 @@ botToken: "your_bot_token"// Optional: Telegram Bot token
 });
 
 bot.start(); // Starts the music bot
-\`\`\`
+```
 
 > Make sure to replace \`apiId\`, \`apiHash\`, \`phone\`, and \`botToken\` with your Telegram credentials.
 
@@ -64,17 +54,17 @@ The bot will join voice chats and allow music streaming commands.
 
 ## Bot Commands
 
-- \`/play <songname>\` – Plays a song in the voice chat
-- \`/skip\` – Skips the currently playing song
-- \`/stop\` – Stops playback and clears the queue
+- /play <songname> – Plays a song in the voice chat
+- /skip – Skips the currently playing song
+- /stop – Stops playback and clears the queue
 
 > Example:
 
-\`\`\`text
+```bash
 /play Despacito
 /skip
 /stop
-\`\`\`
+```
 
 ---
 
@@ -83,11 +73,9 @@ The bot will join voice chats and allow music streaming commands.
 - Python scripts used for voice streaming are located in \`dist/python_bridge/\`
 - Dependencies are listed in \`requirements.txt\`
 
----
-
 ## Development
 
-\`\`\`bash
+```bash
 
 # Install dependencies
 
@@ -100,16 +88,12 @@ npm run build
 # Start bot in development mode
 
 npm run dev
-\`\`\`
-
----
+```
 
 ## Documentation
 
 - Main classes: \`TgMusicBot\` and \`TgVoiceStream\`
 - Example usage is included in \`test.js\`
-
----
 
 ## Contributing
 
@@ -125,7 +109,4 @@ MIT © Rishabh Kaushik
 
 ## Keywords
 
-\`\`\`
-telegram, music-bot, pytgcalls, telethon, nodejs, voice-chat
-\`\`\`
-EOL
+> telegram, music-bot, pytgcalls, telethon, nodejs, voice-chat

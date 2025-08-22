@@ -1,6 +1,6 @@
 {
   "name": "tg-voice-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create Telegram voice chat music bots with Node.js + Python bridge",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
