@@ -1,5 +1,7 @@
+// import files
 import TelegramBot from "node-telegram-bot-api";
 import { TgVoiceStream } from "./TgVoiceStream.js";
+
 
 interface BotConfig {
   apiId: number;

@@ -1,0 +1,13 @@
+# Node modules (never push to GitHub)
+node_modules/
+
+# Compiled output
+dist/
+
+# Optional: Python cache files
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db

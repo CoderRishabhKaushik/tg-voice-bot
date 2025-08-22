@@ -57,7 +57,6 @@ async def handle_command(chat_id: int, cmd: str, arg=None):
         print("⏭ SKIPPED", flush=True)
         await play_next(chat_id)
 
-# ------------------------------------------------------------- 
 async def command_listener():
     loop = asyncio.get_event_loop()
     print("[DEBUG] command_listener started")
